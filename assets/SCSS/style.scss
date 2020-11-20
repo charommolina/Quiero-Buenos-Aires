@@ -427,7 +427,7 @@ font-size: 20px;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background-image: url("https://i.ibb.co/pWwnry6/Atractivo-Grande-2082018075402.jpg"); /*url("https://i.ibb.co/KNT8txM/pexels-eberhard-grossgasteiger-2088205.jpg");*/
+  background-image: url("https://i.ibb.co/pWwnry6/Atractivo-Grande-2082018075402.jpg"); 
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -624,8 +624,9 @@ font-size: 20px;
 
 .superDiv {
   background-color: #ffeadb;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
   z-index: -1;
+
 }
 
 .middle-container{ margin: 100px 0 0;
@@ -1250,7 +1251,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://i.ibb.co/CW5t1P7/3597874.jpg");
+  background-image: url("https://i.ibb.co/QHKvJPX/19162d03bf13e4f1adf05c74ed101228.jpg"); /*https://i.ibb.co/QHKvJPX/19162d03bf13e4f1adf05c74ed101228.jpg*/
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1304,6 +1305,7 @@ h2 {
     flex-direction: column;
     font-weight: 400;
     color: #000;
+    text-shadow: 2px 2px 2px #fff;
   }
 
    h3 {
@@ -1395,14 +1397,33 @@ h2 {
 }
 
 
-/*@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .card {
-    width: 90%;
-  }
-}*/
+    height: auto;
+    margin: auto;
+   }
+   
+   .highlight h2 {
+     margin-left: 0%;
+   }
+
+   .rowLGBT {
+     width: fit-content;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     height: auto;
+   }
+
+   .colp {
+     margin-left: 280px;
+     margin-top: 8px;
+     padding: 0%;
+   }
+}
 
 
-@media screen and (max-width:922px) {
+@media  (max-width:922px) {
   .rowLGBT {
   flex-direction: column;
   flex-wrap: wrap;
@@ -1428,6 +1449,11 @@ h2 {
 
   .formContacto {
     width: 100%;
+  }
+
+  .card-columns {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -1461,6 +1487,24 @@ h2 {
    .subtexto {
      padding: 20px;
    }
+
+   .colp {
+    margin-left: 75px;
+    padding: 0%;
+  }
+
+  .rowLGBT {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: auto;
+    padding: 0%;
+    height: 685;
+    width: 375;
+  }
+
+  .row-sobreMi {
+    padding: 20px;
+  }
  }
 
 
@@ -1468,11 +1512,11 @@ h2 {
   .row-sobreMi {
     width: 100%;
     flex-direction: column;
+    margin-left: 0%;
  }
 
  .superDiv {
-  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: rotate(90deg);
+  width: 100%;
 }
 
 .card {
@@ -1487,9 +1531,23 @@ h2 {
 .subtexto {
   padding: 20px;
 }
+
+.colp {
+  margin-left: 78px;
+  padding: 0%;
 }
 
-@media screen and (max-width: 600px) {
+.rowLGBT {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: auto;
+  padding: 0%;
+  height: 685;
+  width: 375;
+}
+}
+
+@media  (max-width: 600px) {
   .column-sobreMi {
     width: 100%;
   }
@@ -1497,4 +1555,5 @@ h2 {
   .column-sobreMi2 {
     width: 100%;
   }
+
 }
