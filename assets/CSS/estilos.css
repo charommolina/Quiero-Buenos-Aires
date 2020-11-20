@@ -1077,10 +1077,10 @@ main .content video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://i.ibb.co/QHKvJPX/19162d03bf13e4f1adf05c74ed101228.jpg");
-  /*https://i.ibb.co/QHKvJPX/19162d03bf13e4f1adf05c74ed101228.jpg*/
+  background-image: url("https://i.ibb.co/Zhy1RHF/157486.jpg");
+  /*https://i.ibb.co/PCcq4Z9/IMG-2631.jpg*/
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-repeat: no-repeat; }
   .sectionContacto h1 {
     color: #000;
@@ -1121,8 +1121,7 @@ main .content video {
     font-size: 16px;
     flex-direction: column;
     font-weight: 400;
-    color: #000;
-    text-shadow: 2px 2px 2px #fff; }
+    color: #fff; }
   .containerContacto h3 {
     font-weight: bolder;
     font-size: 30px;
@@ -1209,7 +1208,12 @@ main .content video {
   .colp {
     margin-left: 280px;
     margin-top: 8px;
-    padding: 0%; } }
+    padding: 0%; }
+  .card-columns {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    margin-left: auto; } }
 
 @media (max-width: 922px) {
   .rowLGBT {
@@ -1229,7 +1233,12 @@ main .content video {
     width: 100%; }
   .card-columns {
     flex-wrap: wrap;
-    flex-direction: column; } }
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+    padding: 0%; }
+  .tituloIU {
+    font-size: 40px; } }
 
 @media (max-width: 880px) {
   .botonesServiciosBT {
