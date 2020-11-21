@@ -1193,6 +1193,12 @@ main .content video {
 .elastico:focus {
   width: 200px; }
 
+@media (max-width: 1280px) {
+  .rowLGBT {
+    width: auto; }
+  .card-columns {
+    width: auto; } }
+
 @media (max-width: 1024px) {
   .card {
     height: auto;
@@ -1200,14 +1206,17 @@ main .content video {
   .highlight h2 {
     margin-left: 0%; }
   .rowLGBT {
-    width: fit-content;
+    width: auto;
+    /*fit content*/
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     height: auto; }
   .colp {
-    margin-left: 280px;
-    margin-top: 8px;
+    margin-left: 250px;
+    /*280*/
+    margin-top: 4px;
+    /*8*/
     padding: 0%; }
   .card-columns {
     flex-wrap: wrap;
@@ -1231,6 +1240,8 @@ main .content video {
     width: 100%; }
   .formContacto {
     width: 100%; }
+  .textoContacto h3, p {
+    color: black; }
   .card-columns {
     flex-wrap: wrap;
     flex-direction: column;
@@ -1268,7 +1279,9 @@ main .content video {
     height: 685;
     width: 375; }
   .row-sobreMi {
-    padding: 20px; } }
+    padding: 20px; }
+  .col-md-2 {
+    max-width: max-content; } }
 
 @media screen and (max-width: 700px) {
   .row-sobreMi {
@@ -1299,4 +1312,21 @@ main .content video {
   .column-sobreMi {
     width: 100%; }
   .column-sobreMi2 {
-    width: 100%; } }
+    width: 100%; }
+  .arrow-top {
+    right: 15px; }
+  .fieldset-sobreMi {
+    text-align: center;
+    margin-bottom: 50px; }
+  .fieldset-sobreMi textarea {
+    font-size: smaller; }
+  .fieldset-sobreMi input {
+    width: 200px; } }
+
+@media (max-width: 414px) {
+  .sectionContacto h1 {
+    font-size: 60px; }
+  .textoContacto h3, p {
+    color: black; }
+  .bannerLGBT {
+    width: auto; } }

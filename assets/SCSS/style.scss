@@ -1396,7 +1396,13 @@ h2 {
 }
 
 @media (max-width:1280px) {
+ .rowLGBT {
+   width: auto;
+ }
 
+ .card-columns {
+   width: auto;
+ }
 }
 
 
@@ -1412,7 +1418,7 @@ h2 {
    }
 
    .rowLGBT {
-     width: fit-content;
+     width: auto; /*fit content*/
      flex-direction: column;
      flex-wrap: wrap;
      justify-content: flex-start;
@@ -1420,8 +1426,8 @@ h2 {
    }
 
    .colp {
-     margin-left: 280px;
-     margin-top: 8px;
+     margin-left: 250px; /*280*/
+     margin-top: 4px; /*8*/
      padding: 0%;
    }
 
@@ -1463,6 +1469,10 @@ h2 {
     width: 100%;
   }
 
+  .textoContacto h3, p {
+    color: black;
+  }
+
   .card-columns {
     flex-wrap: wrap;
     flex-direction: column;
@@ -1474,6 +1484,8 @@ h2 {
   .tituloIU {
     font-size: 40px;
   }
+
+  
 }
 
 
@@ -1523,6 +1535,10 @@ h2 {
 
   .row-sobreMi {
     padding: 20px;
+  }
+
+  .col-md-2 {
+    max-width: max-content;
   }
  }
 
@@ -1575,4 +1591,34 @@ h2 {
     width: 100%;
   }
 
+  .arrow-top {
+    right: 15px;
+  }
+
+  .fieldset-sobreMi {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .fieldset-sobreMi textarea {
+    font-size: smaller;
+  }
+
+  .fieldset-sobreMi input {
+    width: 200px;
+  }
+}
+
+@media (max-width:414px) {
+  .sectionContacto h1 {
+    font-size: 60px;  
+  }
+
+  .textoContacto h3, p {
+    color: black;
+  }
+
+  .bannerLGBT {
+    width: auto;
+  }
 }
