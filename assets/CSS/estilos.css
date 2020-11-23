@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0; }
 
+body, html {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 body {
   background-color: white; }
 
@@ -174,7 +178,7 @@ main .content video {
 }*/
 /*FOOTER*/
 .footer {
-  padding-top: 200px; }
+  padding-top: 0px; }
 
 .bottomContainer {
   background-color: #2d3045;
@@ -297,7 +301,7 @@ main .content video {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 50px; }
+  margin-bottom: 150px; }
 
 .card-bem__thumbnail {
   width: 100px;
@@ -482,7 +486,7 @@ main .content video {
 
 .contact {
   width: 40%;
-  margin: 40px auto 20px;
+  margin: 20px auto 20px;
   font-family: Lato; }
 
 .little-container {
@@ -494,7 +498,7 @@ main .content video {
   justify-content: space-between;
   line-height: 25px;
   margin-top: 0;
-  margin-bottom: 30px; }
+  /*margin-bottom: 30px;*/ }
 
 #recuadro-sobreMi {
   color: #ff4b5c;
@@ -517,7 +521,7 @@ main .content video {
   font-family: Lato; }
 
 .fieldset-sobreMi input, textarea {
-  border: 2px solid Black;
+  border: 1px solid Black;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px; }
@@ -888,7 +892,7 @@ main .content video {
   background: #ff4b5c;
   text-align: center;
   color: white;
-  margin-bottom: 60px; }
+  /*margin-bottom: 60px;*/ }
   #Testimonios h1 {
     color: white !important;
     font-size: 70px !important;
@@ -970,7 +974,7 @@ main .content video {
   justify-content: center;
   align-items: center;
   /*justify-content: space-around;*/
-  /*  -webkit-tap-highlight-color: transparent;*/ }
+  /*-webkit-tap-highlight-color: transparent;*/ }
   .containerContacto .infoContacto {
     width: 50%;
     display: flex;
@@ -1066,6 +1070,7 @@ main .content video {
 .elastico:focus {
   width: 200px; }
 
+/*MEDIA QUERY*/
 @media (max-width: 2200px) {
   .rowLGBT {
     width: auto; }
@@ -1097,9 +1102,9 @@ main .content video {
     width: auto;
     margin-left: auto; } }
 
-@media (max-width: 991px) and (min-width: 925px) {
+@media (max-width: 1200px) and (min-width: 900px) {
   .card-columns {
-    flex-direction: column; } }
+    flex-direction: column !important; } }
 
 @media (max-width: 922px) {
   .rowLGBT {
