@@ -206,6 +206,9 @@ main .content video {
   font-size: 30px; }
 
 /*ESTILOS DE TEXTOS EN TODOS LOS HTML*/
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
 /* flecha to top*/
 .arrow-top {
   text-align: right;
@@ -794,6 +797,9 @@ main .content video {
     padding: .5rem;
     text-decoration: none; }
 
+.linkAccordion:hover {
+  color: navy; }
+
 .linkAccordion .fa-minus {
   display: none; }
 
@@ -1220,4 +1226,12 @@ main .content video {
   .textoContacto h3, p {
     color: black; }
   .bannerLGBT {
-    width: auto; } }
+    width: auto; }
+  .form-check-input {
+    position: inherit; }
+  .card-bem__thumbnail {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .navbar-toggler {
+    margin-inline-start: auto; } }
